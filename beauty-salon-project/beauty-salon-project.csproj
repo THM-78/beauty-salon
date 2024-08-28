@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D38AD551-6EF6-4266-B4A1-9296F86C55FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>beauty_salon_project</RootNamespace>
+    <AssemblyName>beauty-salon-project</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BehComponents">
+      <HintPath>C:\Users\Taha\Desktop\PersianCalender\PersianCalender\PersianCalender\bin\Debug\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.11.9.2\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDatePickerControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PersianDatePickerWindowsFrom.3.0.1\lib\PersianDatePickerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_personnel.Designer.cs">
+      <DependentUpon>add_personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_services.Designer.cs">
+      <DependentUpon>add_services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_subscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_subscription.Designer.cs">
+      <DependentUpon>add_subscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart.Designer.cs">
+      <DependentUpon>chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mainDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="makeup_salon_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>makeup_salon_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reserve_time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reserve_time.Designer.cs">
+      <DependentUpon>reserve_time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalonDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalonDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalonDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalonDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalonDb.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="salon_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salon_info.Designer.cs">
+      <DependentUpon>salon_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_admins.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_customer.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_customer_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tb_customer_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tb_payment.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_personnel.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_personnelServiceRel.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_reserve.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_salonInfo.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tb_services.cs">
+      <DependentUpon>SalonDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\INationalCodeValidator.cs" />
+    <Compile Include="Utils\PersonnelValidator.cs" />
+    <EmbeddedResource Include="add_personnel.resx">
+      <DependentUpon>add_personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_services.resx">
+      <DependentUpon>add_services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_subscription.resx">
+      <DependentUpon>add_subscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart.resx">
+      <DependentUpon>chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reserve_time.resx">
+      <DependentUpon>reserve_time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salon_info.resx">
+      <DependentUpon>salon_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="mainDataSet.xsc">
+      <DependentUpon>mainDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mainDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mainDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mainDataSet.xss">
+      <DependentUpon>mainDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="makeup_salon_dbDataSet.xsc">
+      <DependentUpon>makeup_salon_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="makeup_salon_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>makeup_salon_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="makeup_salon_dbDataSet.xss">
+      <DependentUpon>makeup_salon_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="SalonDb.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SalonDb.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SalonDb.edmx.diagram">
+      <DependentUpon>SalonDb.edmx</DependentUpon>
+    </None>
+    <None Include="tb_customer_DataSet.xsc">
+      <DependentUpon>tb_customer_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tb_customer_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tb_customer_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tb_customer_DataSet.xss">
+      <DependentUpon>tb_customer_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_ico_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_ico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desckkkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_ico %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-barbershop-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-+-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-services-500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightBgTr70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_messeage_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SalonDb.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SalonDb.edmx</DependentUpon>
+      <LastGenOutput>SalonDb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SalonDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SalonDb.edmx</DependentUpon>
+      <LastGenOutput>SalonDb.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
